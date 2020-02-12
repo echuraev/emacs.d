@@ -9,9 +9,9 @@
 
 ;; Start Emacs as a server
 (when (system-is-linux)
-    (require 'server)
+    (use-package server)
     (unless (server-running-p)
-	(server-start)))
+        (server-start)))
 
 (tool-bar-mode -1) ;; disable tool-bar
 
@@ -41,7 +41,7 @@
 ;; remember cursor position
 (if (version< emacs-version "25.0")
     (progn
-        (require 'saveplace)
+        (use-package saveplace)
         (setq-default save-place t))
     (save-place-mode 1))
 
