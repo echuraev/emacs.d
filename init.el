@@ -12,7 +12,7 @@
 (package-initialize)
 
 ;; get latest package information
-(package-refresh-contents)
+;(package-refresh-contents)
 
 ;; Bootstrap `use-package'
 (unless (package-installed-p 'use-package)

@@ -3,3 +3,6 @@ elpa
 history
 auto-save-list
 places
+bin
+projectile-bookmarks.eld
+transient
